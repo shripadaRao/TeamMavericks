@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
-import SectionHeader from "./partials/SectionHeader";
-import Image from "../elements/Image";
+// import SectionHeader from "./partials/SectionHeader";
+// import Image from "../elements/Image";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -31,22 +31,22 @@ const FeaturesTiles = ({
     className
   );
 
-  const innerClasses = classNames(
-    "features-tiles-inner section-inner pt-0",
-    topDivider && "has-top-divider",
-    bottomDivider && "has-bottom-divider"
-  );
+  // const innerClasses = classNames(
+  //   "features-tiles-inner section-inner pt-0",
+  //   topDivider && "has-top-divider",
+  //   bottomDivider && "has-bottom-divider"
+  // );
 
-  const tilesClasses = classNames(
-    "tiles-wrap center-content",
-    pushLeft && "push-left"
-  );
+  // const tilesClasses = classNames(
+  //   "tiles-wrap center-content",
+  //   pushLeft && "push-left"
+  // );
 
-  const sectionHeader = {
-    title: "Build up the whole picture",
-    paragraph:
-      "Everything required for delicious meals is carefully planned, carefully sourced and delivered to the front door of each customer at the time most convenient for them.",
-  };
+  // const sectionHeader = {
+  //   title: "Build up the whole picture",
+  //   paragraph:
+  //     "Everything required for delicious meals is carefully planned, carefully sourced and delivered to the front door of each customer at the time most convenient for them.",
+  // };
 
   return (
     <section {...props} className={outerClasses}>
