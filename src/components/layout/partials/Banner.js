@@ -8,7 +8,7 @@ const Banner = ({ ...props }) => {
       {bannerOpen && (
         <div {...props} className="banner">
           <div className="banner-inner text-xxs">
-            <div className="banner-container">
+            {/* <div className="banner-container">
               <a
                 className="banner-link banner-link-white"
                 href="https://github.com/cruip/open-react-template"
@@ -23,10 +23,8 @@ const Banner = ({ ...props }) => {
                 href="https://cruip.com/open-pro/"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                Check Premium Version
-              </a>
-            </div>
+              ></a>
+            </div> */}
             <button
               className="banner-close"
               onClick={() => setBannerOpen(false)}
