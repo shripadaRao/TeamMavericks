@@ -1,30 +1,32 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
+
 
 const Banner = ({ ...props }) => {
-  const [bannerOpen, setBannerOpen] = useState(true);
+  // const [bannerOpen, setBannerOpen] = useState(true);
 
   return (
     <>
-      {bannerOpen && (
+      {/* {bannerOpen && (
         <div {...props} className="banner">
           <div className="banner-inner text-xxs">
-            {/* <div className="banner-container">
+            <div className="banner-container">
               <a
                 className="banner-link banner-link-white"
                 href="https://github.com/cruip/open-react-template"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download<span className="banner-hide-on-sm"> on GitHub</span>
+                Chat<span className="banner-hide-on-sm"></span>
               </a>{" "}
-              <span className="banner-separator">or</span>{" "}
+              <span className="banner-separator"></span>{" "}
               <a
                 className="banner-link banner-link-green"
                 href="https://cruip.com/open-pro/"
                 target="_blank"
                 rel="noopener noreferrer"
               ></a>
-            </div> */}
+            </div>
             <button
               className="banner-close"
               onClick={() => setBannerOpen(false)}
@@ -36,7 +38,7 @@ const Banner = ({ ...props }) => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

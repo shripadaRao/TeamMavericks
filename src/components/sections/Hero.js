@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link } from "react-router-dom";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
@@ -73,23 +74,28 @@ const Hero = ({
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    wideMobile
-                    href="https://cruip.com/"
-                  >
-                    Get started
-                  </Button>
-                  <Button
+                  <Link to="get-started">
+                    <Button
+                      tag="a"
+                      color="primary"
+                      wideMobile
+                      // href="https://team-mavericks.netlify.app/"
+                      // <Link to="/about-us">About us</Link>
+                    >
+                      Get started
+                    </Button>
+                  </Link>
+
+                  <Link to="/explore-meals">
+                    <Button
                     tag="a"
                     color="dark"
                     wideMobile
-                    href="https://github.com/cruip/open-react-template/"
-                  >
+                      >
                     Explore Meals
-                  </Button>
-                </ButtonGroup>
+                    </Button>
+                  </Link>
+                </ButtonGroup>           
               </div>
             </div>
           </div>
