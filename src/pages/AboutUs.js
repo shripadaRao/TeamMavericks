@@ -11,7 +11,7 @@ function AboutUs() {
       <h2>About Us</h2>
       <div className="people-container">
         <div className="person-card">
-          <img src={Person1}  />
+          <img src={Person1}  alt="Person 1"/>
           <div className="person-details">
             <h2 className="person-name">Aadithya</h2>
           </div>
